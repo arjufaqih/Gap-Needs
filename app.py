@@ -140,17 +140,15 @@ with tab1_obj:
         dataframe_config = {
             "HUB_NAME": st.column_config.Column(
                 label="Nama Hub", 
-                width="250", 
-                # help="Nama lengkap Hub"
+                width=200, 
             ),
             "CITY": st.column_config.Column(
                 label="Kab/Kota", 
-                width="250", 
+                width=200, 
             ),
             "NOTES": st.column_config.Column(
                 width="large",
                 disabled=True,
-                # help="Catatan Penting mengenai Hub",
             )
         }
         
@@ -279,3 +277,4 @@ with tab2_obj:
             Dataframe kosong. Silakan periksa Service Account, secrets.toml, atau izin akses Google Sheet.
 
         """)
+
